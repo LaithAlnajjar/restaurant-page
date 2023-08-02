@@ -34,6 +34,11 @@ homeLink.addEventListener("click", e => {
     home();
 });
 
+menuLink.addEventListener("click", e => {
+    content.textContent = "";
+    menu();
+});
+
 linkList.append(homeLink);
 linkList.append(menuLink);
 linkList.append(contactLink);
@@ -42,8 +47,7 @@ links.append(linkList);
 
 
 
-home();
-
-content.textContent = "";
 menu();
+
+
 
