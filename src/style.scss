@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 /* CSS Reset */
 
 /* Box sizing rules */
@@ -22,8 +25,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
     list-style: none;
 }
 
@@ -37,6 +40,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: 'Pacifico', cursive;
 }
 
 /* A elements that don't have a class get default styles */
@@ -77,18 +81,29 @@ select {
 
 /* CSS Reset End */
 
+:root {
+    --blue: #CCE1D9;
+    --creamy: #F9E5B8;
+    --text: #321B14;
+}
+
+
 body {
     overflow-x: hidden;
+    background-color: var(--creamy);
+    color: var(--text);
 }
 
 header {
-    background-color: blue;
+    background-color: var(--creamy);
     height: 11vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
-    background-color: blue;
+    background-color: var(--blue);
     height: 7vh;
     width: 100vw;
 }
@@ -115,4 +130,30 @@ footer {
     font-size: 2.5rem;
     padding: 2s0px;
     background-color: rgb(169, 169, 169, 0.3);
+}
+
+.links {
+    display: grid;
+    place-content: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding: 10px 90px;
+    gap: 50px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.logo {
+    display: grid;
+    place-content: center;
+    padding: 10px 60px;
+    font-size: 2rem;
+    font-weight: 800;
 }
