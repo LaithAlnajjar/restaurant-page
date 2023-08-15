@@ -51,7 +51,7 @@ linkList.append(contactLink);
 links.append(linkList);
 
 
-contact();
+home();
 
 
 
