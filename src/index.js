@@ -3,12 +3,10 @@ import home from './homepage';
 import menu from './menu';
 
 const body = document.querySelector('body');
-const footer = document.createElement('footer');
 const header = document.createElement('header');
 const content = document.querySelector('#content');
 
 body.prepend(header);
-body.append(footer);
 
 const links = document.createElement('div');
 links.classList.add('links');

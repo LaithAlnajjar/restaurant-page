@@ -5,6 +5,7 @@ export default function displayMenu() {
 
 
     menuContainer.classList.add('menu-container');
+    menuContainer.textContent = "";
     const content = document.querySelector('#content');
 
 
@@ -32,7 +33,7 @@ function createMenuItem(name, description) {
     menuItemName.textContent = name;
 
     let menuItemDescription = document.createElement('p');
-    menuItemDescription = description;
+    menuItemDescription.textContent = description;
 
     menuItem.append(menuItemName);
     menuItem.append(menuItemDescription);
