@@ -201,3 +201,10 @@ p:nth-child(2) {
 .menu-title:before {
     margin-right: 20px;
 }
+
+.contact {
+    display: grid;
+    place-content: center;
+    height: 100%;
+    font-size: 3rem;
+}

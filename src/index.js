@@ -1,6 +1,7 @@
 import "./style.scss";
 import home from './homepage';
 import menu from './menu';
+import contact from './contact';
 
 const body = document.querySelector('body');
 const header = document.createElement('header');
@@ -37,6 +38,12 @@ menuLink.addEventListener("click", e => {
     menu();
 });
 
+contactLink.addEventListener("click", e => {
+    content.textContent = "";
+    contact();
+});
+
+
 linkList.append(homeLink);
 linkList.append(menuLink);
 linkList.append(contactLink);
@@ -44,8 +51,7 @@ linkList.append(contactLink);
 links.append(linkList);
 
 
-
-menu();
+contact();
 
 
 
